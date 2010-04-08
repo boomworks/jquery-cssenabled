@@ -12,5 +12,5 @@ jQuery plugin to check whether the user's browser has CSS enabled
 	}
 
 ## Notes
-Currently completely untested in anything other thahn Firefox 3.6. Use at your own risk.
+Currently completely untested in anything other than Firefox 3.6. Use at your own risk.
 This currently only tests whether an element that is hidden using the jQuery .hide() method is hidden, and as such will NOT work with 'disable styles' in Firefox developer toolbar etc.
