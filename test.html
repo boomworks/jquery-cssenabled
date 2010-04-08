@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<title>jQuery CSS Enabled</title>
+
+	<style type="text/css">
+	body {
+		font-family: sans-serif;
+		background: #fff;
+		color: #333;
+		text-align: center;
+	}
+
+	#is-css-enabled {
+		color: #0c0;
+		font-weight: bold;
+		font-size: 3em;
+	}
+
+	</style>
+
+</head>
+<body>
+
+	<h1>Is CSS enabled?</h1>
+
+	<div id="is-css-enabled">Dunno, but JS isn't.</div>
+
+	<script type="text/javascript" src="http://jscdn.net/jquery.js"></script>
+	<script type="text/javascript" src="jquery-cssenabled.js"></script>
+	<script type="text/javascript">
+
+	$(function(){
+		$('#is-css-enabled').text($.cssEnabled() ? 'Yes' : 'No');
+
+		$('body').click(function(){
+			$('#is-css-enabled').text($.cssEnabled() ? 'Yes' : 'No');
+		});
+
+	});
+
+	</script>
+
+</body>
+</html>
